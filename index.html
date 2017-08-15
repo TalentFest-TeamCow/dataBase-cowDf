@@ -27,7 +27,7 @@
 		        <div class="col-md-4">
                     <div class="input-group">
                       <span class="input-group-addon" id="basic-addon1">E</span>
-                      <input type="text" class="form-control" placeholder="Buscar empresa" aria-label="Username" aria-describedby="basic-addon1">
+                      <input id="filtrar" type="text" class="form-control" placeholder="Buscar empresa" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
                 </div>
 		        <div class="col-md-6 col-md-offset-2">
@@ -48,7 +48,7 @@
                                 <img class="lib-img-show" src="https://dummyimage.com/200x200/000/fff">
                             </div>
                             <div class="col-md-8">
-                                <div class="lib-row lib-header">
+                                <div id="buscar" class="lib-row lib-header">
                                     <h2>Nombre comercial</h2>
                                     <span>SKU:<span id="sku-empresa"></span> </span>
                                     <span><b>|</b></span>
@@ -63,11 +63,11 @@
                                     <span id="cliente-empresa"></span>
                                 </div>
                                 <div class="lib-row lib-desc">
-                                    <span>Mail to: </span>
+                                    <span>Mail to:</span>
                                     <span id="mail empresa"></span>
                                 </div>
                                 <div class="lib-row lib-desc">
-                                    <span>Call: </span>
+                                    <span>Call:</span>
                                     <span id="call-empresa"></span>
                                 </div>
                             </div>
@@ -92,18 +92,55 @@
 					<!-- TERMINA CODIGO DE MONSE -->
 				</section>
 
-				<section role="tabpanel" class="tab-pane" id="espacios">
-					<!-- EMPIEZA CODIGO DE GOCCHI -->
-					<section>
-						<h1>DETALLES</h1>
-					</section>
-					<!-- EMPIEZA CODIGO DE GOCCHI -->
+				<section role="tabpanel" class="container tab-pane" id="espacios">
+					<div class="input-group">
+					  <span class="input-group-addon">Buscar</span>
+					  <input id="filtrar-espacios" type="text" class="form-control">
+					</div>
+					<div class="row">
+						<div class="col-md-1 radio">
+						  <label><input id="rdi-empresa" type="radio" name="optradio">Empresa</label>
+						</div>
+						<div class="col-md-1 radio">
+						  <label><input id="rdi-pisos" type="radio" name="optradio">Pisos</label>
+						</div>
+						<div class="col-md-1 radio">
+						  <label><input id="rdi-precios" type="radio" name="optradio">Precios</label>
+						</div>
+					</div>
+					 
+					<table class="table table-hover">
+					 <thead>
+					  <tr>
+					   <th>SKU</th>
+					   <th>Empresa</th>
+					   <th>Piso</th>
+					   <th>Oficina</th>
+					   <th>Precio</th> 
+					   <th>Metraje</th>
+					   <th>Núm.Personas</th>
+					   <th>Estado</th>
+					  </tr>
+					 </thead>
+					 <tbody class="buscar">
+					   <tr><th>0020</th><th>Laboratoria</th><th>2</th><th>7</th><th>$23,456</th><th>34m</th><th>23</th><th>Rentado</th></tr>
+					   <tr><th>0020</th><th>Laboratoria</th><th>2</th><th>7</th><th>$23,456</th><th>34m</th><th>23</th><th>Rentado</th></tr>
+					   <tr><th>0020</th><th>Laboratoria</th><th>2</th><th>7</th><th>$23,456</th><th>34m</th><th>23</th><th>Rentado</th></tr>
+					   <tr><th>0020</th><th>Laboratoria</th><th>2</th><th>7</th><th>$23,456</th><th>34m</th><th>23</th><th>Rentado</th></tr>
+					   <tr><th>0020</th><th>Laboratoria</th><th>2</th><th>7</th><th>$23,456</th><th>34m</th><th>23</th><th>Rentado</th></tr>
+					   <tr><th>0020</th><th>Laboratoria</th><th>2</th><th>7</th><th>$23,456</th><th>34m</th><th>23</th><th>Rentado</th></tr>
+					   <tr><th>0020</th><th>Laboratoria</th><th>2</th><th>7</th><th>$23,456</th><th>34m</th><th>23</th><th>Rentado</th></tr>
+					   <tr><th>0020</th><th>Laboratoria</th><th>2</th><th>7</th><th>$23,456</th><th>34m</th><th>23</th><th>Rentado</th></tr>
+					   <tr><th>0020</th><th>Laboratoria</th><th>2</th><th>7</th><th>$23,456</th><th>34m</th><th>23</th><th>Rentado</th></tr>
+					   <tr><th>0010</th><th>Laboratoria</th><th>10</th><th>2</th><th>$28,796</th><th>100m</th><th>40</th><th>Rentado</th></tr>
+					 </tbody>
+					</table>
 				</section>
 			</section>
-
 		</div>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+		<script src="http://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="assets/js/app.js"></script>
 	</body>
 </html>
