@@ -3,7 +3,7 @@ var start = function (){
 }
 
 var inicio = function (){
-    location.href = "index.html";
+    location.href = "view/index.html";
 }
 
 $(document).ready(start)

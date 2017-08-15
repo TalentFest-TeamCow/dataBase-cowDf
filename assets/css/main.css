@@ -72,3 +72,13 @@ div.navbar-header.row > img {
   transform:translate(-50%,-50%);
 }
 /*FIN - SPLASH*/
+/*INICIO-DETALLES*/
+.img-detalle{
+  width: 100%;
+  height: 15em;
+}
+
+.input-img{
+  color:#fff;
+}
+/*FIN_DETALLES*/
