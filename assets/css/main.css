@@ -1,4 +1,41 @@
+/* VARIABLES DE COLOR - fondo */
+.fondo-azul{
+    background-color: #50FFFF;
+}
+
+.fondo-rojo{
+    background-color: #FF0000;
+}
+
+.fondo-negro {
+    background-color: black;
+}
+
+.fondo-blanco {
+    background-color: white;
+}
+
+/* VARIABLES DE COLOR - letra */
+.text-azul{
+    color: #50FFFF;
+}
+
+.text-rojo{
+    color: #FF0000;
+}
+
+.text-negro {
+    color: black;
+}
+
+
 /* INICIO - VIEW 1 */
+
+    /*nav*/
+div.navbar-header.row > img {
+    width: 15%;
+}
+    /*nav*/
 
 .marging-vw-uno-search-bottom{
     margin-bottom: 4%;
