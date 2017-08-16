@@ -70,11 +70,20 @@ div.navbar-header.row > img {
 
 
 /* INICIO - VIEW 3 */
-
 .padding-vw3-radio{
     padding-top: 3%;
 }
 
+.checkbox, .radio {
+    margin-top: 0;
+}
+
+.checkbox+.checkbox, .radio+.radio {
+    margin-top: 0;
+}
+div#mapa > img{
+    width: 100%;
+}
 
 /* FIN - VIEW 3 */
 
