@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-	<title>Registro CowDf</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
-	<link rel="stylesheet" href="assets/css/main.css">
-</head>
-
-<body>
-
-	<nav class="navbar navbar-default fondo-negro">
-		<div class="container">
-			<div class="navbar-header row">
-				<img src="assets/img/cow_logo.jpg" alt="logo-cow" class="col-md-1 col-md-offset-11">
-			</div>
-		</div>
-	</nav>
+	<head>
+		<title>Registro CowDf</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+		<link rel="stylesheet" href="assets/css/main.css">
+		<link rel="stylesheet" href="assets/css/fonts.css">
+	</head>
+	<body>
+	    
+	    <nav class="navbar navbar-default fondo-negro">
+           <div class="container">
+               <div class="navbar-header row">
+                   <img src="assets/img/cow_logo.jpg" alt="logo-cow" class="col-md-1 col-md-offset-11">
+               </div>
+           </div>
+       </nav>
 
 	<div class="container">
 		<!-- Nav tabs -->
@@ -44,49 +43,87 @@
 						<div class="col-md-6 col-md-offset-2">
 							<div class="col-md-6 col-md-offset-6">
 								<button type="button" class="btn btn-danger col-md-2">
-			                            <span class="glyphicon glyphicon-plus-sign" aria-hidden="true" id="sizing-addon1"></span>
-			                        </button>
+                    <span class="glyphicon glyphicon-plus-sign" aria-hidden="true" id="sizing-addon1"></span>
+                </button>
 								<p class="col-md-10">Agregar nueva empresa</p>
 							</div>
 						</div>
 					</div>
 
-					<div class="row row-margin-bottom">
-						<div class="col-md-10 col-md-offset-1 no-padding lib-item" data-category="view">
-							<div class="lib-panel">
-								<div class="row box-shadow">
-									<div class="col-md-3 marging-vw-uno-search-top-img">
-										<img class="lib-img-show" src="https://dummyimage.com/200x200/000/fff">
-									</div>
-									<div class="col-md-8">
-										<div class="lib-row lib-header">
-											<h2>Nombre comercial</h2>
-											<span>SKU:<span id="sku-empresa"></span> </span>
-											<span><b>|</b></span>
-											<span> No. de miembros:<span id="miembros-empresa"></span> </span>
-											<span><b>|</b></span>
-											<span> Renta:<span id="renta-empresa"></span> </span>
-											<span> <b>|</b> </span>
-											<span>  Piso:<span id="piso-empresa"></span> </span>
-										</div>
-										<div class="lib-row lib-desc">
-											<span>Cliente:</span>
-											<span id="cliente-empresa"></span>
-										</div>
-										<div class="lib-row lib-desc">
-											<span>Mail to: </span>
-											<span id="mail-empresa"></span>
-										</div>
-										<div class="lib-row lib-desc">
-											<span>Call: </span>
-											<span id="call-empresa"></span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
+
+	            <div class="row row-margin-bottom">
+	                <div class="col-md-10 col-md-offset-1 no-padding lib-item" data-category="view">
+	                    <div class="lib-panel">
+	                        <div class="row box-shadow">
+	                            <div class="col-md-3 marging-vw-uno-search-top-img">
+	                                <img class="lib-img-show" src="https://dummyimage.com/200x200/000/fff">
+	                            </div>
+	                            <div class="col-md-8">
+	                                <div class="lib-row lib-header">
+	                                    <h2>Nombre comercial</h2>
+	                                    <span>SKU:<span id="sku-empresa"></span> </span>
+	                                    <span><b>|</b></span>
+	                                    <span> No. de miembros:<span id="miembros-empresa"></span> </span>
+	                                    <span><b>|</b></span>
+	                                    <span> Renta:<span id="renta-empresa"></span> </span>
+	                                    <span> <b>|</b> </span>
+	                                    <span>  Piso:<span id="piso-empresa"></span> </span>
+	                                </div>
+	                                <div class="lib-row lib-desc">
+	                                    <span>Cliente:</span>
+	                                    <span id="cliente-empresa"></span>
+	                                </div>
+	                                <div class="lib-row lib-desc">
+	                                    <span>Mail to: </span>
+	                                    <span id="mail-empresa"></span>
+	                                </div>
+	                                <div class="lib-row lib-desc">
+	                                    <span>Call: </span>
+	                                    <span id="call-empresa"></span>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	            
+	            <div class="row row-margin-bottom">
+	                <div class="col-md-10 col-md-offset-1 no-padding lib-item" data-category="view">
+	                    <div class="lib-panel">
+	                        <div class="row box-shadow">
+	                            <div class="col-md-3 marging-vw-uno-search-top-img">
+	                                <img class="lib-img-show" src="https://dummyimage.com/200x200/000/fff">
+	                            </div>
+	                            <div class="col-md-8">
+	                                <div class="lib-row lib-header">
+	                                    <h2>Nombre comercial</h2>
+	                                    <span>SKU:<span id="sku-empresa"></span> </span>
+	                                    <span><b>|</b></span>
+	                                    <span> No. de miembros:<span id="miembros-empresa"></span> </span>
+	                                    <span><b>|</b></span>
+	                                    <span> Renta:<span id="renta-empresa"></span> </span>
+	                                    <span> <b>|</b> </span>
+	                                    <span>  Piso:<span id="piso-empresa"></span> </span>
+	                                </div>
+	                                <div class="lib-row lib-desc">
+	                                    <span>Cliente:</span>
+	                                    <span id="cliente-empresa"></span>
+	                                </div>
+	                                <div class="lib-row lib-desc">
+	                                    <span>Mail to: </span>
+	                                    <span id="mail-empresa"></span>
+	                                </div>
+	                                <div class="lib-row lib-desc">
+	                                    <span>Call: </span>
+	                                    <span id="call-empresa"></span>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+					</section>
+
 				<!-- Termina seccion empresa **Karla**  -->
 			</section>
 
