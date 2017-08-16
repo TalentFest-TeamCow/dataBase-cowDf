@@ -14,6 +14,7 @@
 
 
 <body>
+    <!-- Nav -->
 	<nav class="navbar navbar-default fondo-negro navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header row">
@@ -22,6 +23,7 @@
 		</div>
 	</nav>
 
+    <!-- Tab -->
 	<div class="container margin-top-nav">
 			<!-- Nav tabs -->
 			<ul class="nav nav-tabs" role="tablist" id="myTabs">
@@ -32,7 +34,7 @@
 
 
 
-			<!-- Tab panes -->
+			<!-- Tab panels -->
 			<section class="tab-content">
 
 				<!-- Empieza seccion empresa **Karla**  -->
@@ -304,10 +306,12 @@
 				<!-- EMPIEZA CODIGO DE GOCCHI -->
 				&nbsp
 				<section role="tabpanel" class="container tab-pane" id="espacios">
-					<div class="input-group">
+				    <div class="row">
+				        <div class="input-group col-md-5">
 						<span class="input-group-addon">Buscar</span>
 						<input id="filtrar-espacios" type="text" class="form-control">
 					</div>
+                    </div>
 					<div class="row">
 						<div class="col-md-1 radio padding-vw3-radio">
 							<label><input id="rdi-empresa" type="radio" name="optradio">Empresa</label>
@@ -322,7 +326,9 @@
 
 					<section class="container">
 						<div class="row">
-							<img class="img-responsive" src="assets/img/croquis piso 4.png" alt="">
+						    <div id="mapa" class="col-md-6 col-md-offset-2">
+							    <img class="img-responsive" src="assets/img/croquis piso 4.png" alt="mapa">
+							</div>
 						</div>
 					</section>
 					<table class="table table-hover">
