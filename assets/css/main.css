@@ -31,10 +31,6 @@
 
 /*--- GENERALES ---*/
 
-body{
-    font-family: "Lucida Console", Monaco, monospace;
-}
-
 a{
     color: #FF0000;
 }
@@ -50,8 +46,12 @@ div.navbar-header.row > img {
 }
     /*nav*/
 
+.margin-top-nav{
+    margin-top: 8%;
+}
+
 .marging-vw-uno-search-bottom{
-    margin-bottom: 4%;
+    margin-bottom: 2%;
 }
 
 .marging-vw-uno-search-top{
@@ -63,6 +63,20 @@ div.navbar-header.row > img {
 }
 
 /* FIN - VIEW 1 */
+
+
+/* INICIO - VIEW 2 */
+/* FIN - VIEW 2 */
+
+
+/* INICIO - VIEW 3 */
+
+.padding-vw3-radio{
+    padding-top: 3%;
+}
+
+
+/* FIN - VIEW 3 */
 
 /*INICIO - SPLASH*/
 .logo{
