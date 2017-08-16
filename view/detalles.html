@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
   <!-- <link rel="stylesheet" href="detalles.css"> -->
+
+  <link rel="stylesheet" href="../assets/css/main.css">
+
 </head>
 
 <body>
@@ -20,7 +23,8 @@
       <div class="card">
         <div class="row ">
           <div class="col-xs-12 col-md-3 ">
-            <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97400&w=400&h=400" class="w-100 img-responsive">
+            <img id="image-logo" class="img-responsive img-detalle"/>
+            <input type="file" name="imagen-logo" id="upload-logo" class="input-img">
           </div>
           <div class="col-xs-12 col-md-9">
             <div class="card-block px-3">
@@ -110,12 +114,10 @@
           <h3>Datos de contacto</h3>
 
             <div class="form-group row">
-              <div class="col-xs-3">
-                <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97400&w=400&h=400" class="w-100 img-responsive">
+              <div class="col-xs-12 col-md-6">
+                <img id="image-contacto" class="img-responsive img-detalle"/>
+                <input type="file" name="imagen-contacto" id="upload-contacto" class="input-img" >
               </div>
-              <label for="exampleInputFile">File input</label>
-              <input type="file" id="exampleInputFile">
-              <!-- <p class="help-block">Example block-level help text here.</p> -->
             </div>
             <div class="form-group">
               <label for="nombreContacto">Nombre de contacto</label>

@@ -14,6 +14,7 @@ $('#myTabs a').click(function (e) {
 
 var cargarPagina=function(){
 	$('#filtrar-espacios').keyup(filtrarBusqueda);
+	$('#filtrar-clientes').keyup(filtrarBusqueda);
 }
 
 
