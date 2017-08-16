@@ -11,10 +11,21 @@ $('#myTabs a').click(function (e) {
         }).show();
  	}
 
+function filtrarEmpresa() {
+ 	var rex = new RegExp($(this).val(), 'i');
+        $('.buscar th').hide();
+        $('.buscar th').filter(function () {
+            return rex.test($(this).text());
+        }).show();
+ 	}
+
+
 var cargarPagina=function(){
 	$('#filtrar-espacios').keyup(filtrarBusqueda);
+	$('#filtrar-empresas').keyup(filtrarEmpresa);
 	$('#filtrar-clientes').keyup(filtrarBusqueda);
   mostrarEmpresas();
+
 }
 
 
@@ -92,6 +103,7 @@ function crearEmpresa(empresas) {
   });
   $("#contenedorEmpresas").html(plantillaFinal);
 }
+
 
 
 $(document).ready(cargarPagina);
