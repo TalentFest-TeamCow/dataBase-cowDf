@@ -32,6 +32,10 @@
 /*--- GENERALES ---*/
 
 a{
+    color: black;
+}
+
+a:hover{
     color: #FF0000;
 }
 
@@ -50,6 +54,11 @@ div.navbar-header.row > img {
     margin-top: 8%;
 }
 
+div.row.row-margin-bottom{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
 .marging-vw-uno-search-bottom{
     margin-bottom: 2%;
 }
@@ -62,10 +71,35 @@ div.navbar-header.row > img {
     margin-top: 4.5%;
 }
 
+div.col-md-3.marging-vw-uno-search-top-img > img {
+    opacity: 0.8;
+    filter: alpha(opacity=50);
+}
+
+div.col-md-3.marging-vw-uno-search-top-img > img:hover {
+    opacity: 1;
+    filter: alpha(opacity=50);
+}
+
+.margin-vw1-tarjeta{
+    margin-bottom: 2%;
+    padding-bottom: 2%;
+}
+
+div.row.row-margin-bottom.margin-vw1-tarjeta:hover{
+    cursor: pointer;
+    
+}
+
 /* FIN - VIEW 1 */
 
 
 /* INICIO - VIEW 2 */
+
+.margin-vw2-margin-nav{
+    margin-top: 8%;
+}
+
 /* FIN - VIEW 2 */
 
 
@@ -83,6 +117,10 @@ div.navbar-header.row > img {
 }
 div#mapa > img{
     width: 100%;
+}
+
+.img-ocultas{
+    display: none;
 }
 
 /* FIN - VIEW 3 */
