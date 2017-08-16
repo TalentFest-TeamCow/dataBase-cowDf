@@ -13,8 +13,8 @@ $('#myTabs a').click(function (e) {
 
 function filtrarEmpresa() {
  	var rex = new RegExp($(this).val(), 'i');
-        $('.buscar th').hide();
-        $('.buscar th').filter(function () {
+        $('.buscar-empresas .empresa').hide();
+        $('.buscar-empresas .empresa').filter(function () {
             return rex.test($(this).text());
         }).show();
  	}
@@ -41,16 +41,16 @@ firebase.initializeApp(config);
 
 var database = firebase.database();
 
-var plantilla = '<div class="row row-margin-bottom margin-vw1-tarjeta">'+
-    							'<div class="col-md-10 col-md-offset-1 no-padding lib-item" data-category="view">'+
+var plantilla = '<div class="empresa row row-margin-bottom margin-vw1-tarjeta">'+
+    							'<div class="empresa col-md-10 col-md-offset-1 no-padding lib-item" data-category="view">'+
     								'<div class="lib-panel">'+
     									'<div class="row box-shadow">'+
     										'<div class="col-md-3 marging-vw-uno-search-top-img">'+
     											'<img class="lib-img-show" src="https://dummyimage.com/200x200/000/fff">'+
     										'</div>'+
     										'<div class="col-md-8">'+
-    											'<div class="lib-row lib-header">'+
-    												'<h2>__NOMBRE_COMERCIAL__</h2>'+
+    											'<div class="lib-row lib-header buscar-empresas">'+
+    												'<h2 >__NOMBRE_COMERCIAL__</h2>'+
     												'<span>SKU:<span id="sku-empresa">__SKU__</span> </span>'+
     												'<span><b>|</b></span>'+
     												'<span> No. de miembros:<span id="miembros-empresa">__MODALIDAD__</span> </span>'+
