@@ -1,3 +1,14 @@
+
+body{
+	background-color: #000;
+}
+.logo{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+=======
 /* INICIO - VIEW 1 */
 
 .marging-vw-uno-search-bottom{
@@ -12,4 +23,4 @@
     margin-top: 4.5%;
 }
 
-/* FIN - VIEW 1 */
+
