@@ -1,7 +1,7 @@
-// $('#myTabs a').click(function (e) {
-//   e.preventDefault()
-//   $(this).tab('show')
-// })
+$('#myTabs a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
 
  function filtrarBusqueda() {
  	var rex = new RegExp($(this).val(), 'i');
@@ -13,10 +13,8 @@
 
 var cargarPagina=function(){
 	$('#filtrar-espacios').keyup(filtrarBusqueda);
-} 
+}
 
 
 
 $(document).ready(cargarPagina);
- 
-          
