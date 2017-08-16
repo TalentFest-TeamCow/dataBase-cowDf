@@ -12,10 +12,20 @@ $('#myTabs a').click(function (e) {
         }).show();
  	}
 
+function filtrarEmpresa() {
+ 	var rex = new RegExp($(this).val(), 'i');
+        $('.buscar th').hide();
+        $('.buscar th').filter(function () {
+            return rex.test($(this).text());
+        }).show();
+ 	}
+
+
 var cargarPagina=function(){
 	$('#filtrar-espacios').keyup(filtrarBusqueda);
-	$('#filtrar-clientes').keyup(filtrarBusqueda);
+	$('#filtrar-empresas').keyup(filtrarEmpresa);
 }
+
 
 
 

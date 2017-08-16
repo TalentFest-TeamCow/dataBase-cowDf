@@ -12,8 +12,10 @@
 	<link rel="stylesheet" href="../assets/css/fonts.css">
 </head>
 
+
 <body>
-	<nav class="navbar navbar-default fondo-negro">
+    <!-- Nav -->
+	<nav class="navbar navbar-default fondo-negro navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header row">
 				<img src="assets/img/cow_logo.jpg" alt="logo-cow" class="col-md-1 col-md-offset-11">
@@ -21,7 +23,8 @@
 		</div>
 	</nav>
 
-	<div class="container">
+    <!-- Tab -->
+	<div class="container margin-top-nav">
 			<!-- Nav tabs -->
 			<ul class="nav nav-tabs" role="tablist" id="myTabs">
 				<li role="presentation" class="active"><a href="#empresas" aria-controls="empresas" role="tab" data-toggle="tab">Empresas</a></li>
@@ -31,7 +34,7 @@
 
 
 
-			<!-- Tab panes -->
+			<!-- Tab panels -->
 			<section class="tab-content">
 
 				<!-- Empieza seccion empresa **Karla**  -->
@@ -41,7 +44,7 @@
 							<div class="col-md-4">
 								<div class="input-group">
 									<span class="input-group-addon" id="basic-addon1">E</span>
-									<input type="text" class="form-control" placeholder="Buscar empresa" aria-label="Username" aria-describedby="basic-addon1">
+									<input id="filtrar-empresas" type="text" class="form-control" placeholder="Buscar empresa" aria-label="Username" aria-describedby="basic-addon1">
 								</div>
 							</div>
 							<div class="col-md-6 col-md-offset-2">
@@ -64,7 +67,7 @@
 										</div>
 										<div class="col-md-8">
 											<div class="lib-row lib-header">
-												<h2>Nombre comercial</h2>
+												<h2 class="empresa">Nombre comercial</h2>
 												<span>SKU:<span id="sku-empresa"></span> </span>
 												<span><b>|</b></span>
 												<span> No. de miembros:<span id="miembros-empresa"></span> </span>
@@ -100,7 +103,7 @@
 										</div>
 										<div class="col-md-8">
 											<div class="lib-row lib-header">
-												<h2>Nombre comercial</h2>
+												<h2 class="empresa">Nombre comercial</h2>
 												<span>SKU:<span id="sku-empresa"></span> </span>
 												<span><b>|</b></span>
 												<span> No. de miembros:<span id="miembros-empresa"></span> </span>
@@ -131,9 +134,10 @@
 				<!-- Termina seccion empresa **Karla**  -->
 
 				<!-- EMPIEZA CODIGO DE MONSE -->
+				&nbsp
 				<section role="tabpanel" class="tab-pane" id="clientes">
 					<section class="container">
-						<div class="row input-group">
+						<div class="row input-group col-md-5">
 							<span class="input-group-addon">Buscar</span>
 							<input id="filtrar-clientes" type="text" class="form-control">
 						</div>
@@ -144,7 +148,7 @@
 							<table class="table table-hover">
 								<thead>
 									<tr>
-										<th>Número</th>
+										<th>#</th>
 										<th>Nombre</th>
 										<th>Apellido</th>
 										<th>Empresa</th>
@@ -153,7 +157,7 @@
 										<th>Agregar</th>
 									</tr>
 								</thead>
-								<tbody class="buscar">
+								<tbody>
 									<tr>
 										<th scope="row">1</th>
 										<td>Gaby</td>
@@ -172,8 +176,8 @@
 									</tr>
 									<tr>
 										<th scope="row">2</th>
-										<td>Griss</td>
-										<td>blabla</td>
+										<td>Gaby </td>
+										<td>Rocha</td>
 										<td>Laboratoria</td>
 										<td>Gaby@laboratoria.la</td>
 										<td>57492054</td>
@@ -232,8 +236,8 @@
 									</tr>
 									<tr>
 										<th scope="row">8</th>
-										<td>Sr Prr</td>
-										<td>pr pr</td>
+										<td>Gaby</td>
+										<td>Rocha</td>
 										<td>Laboratoria</td>
 										<td>Gaby@laboratoria.la</td>
 										<td>57492054</td>
@@ -274,19 +278,41 @@
 				<!-- TERMINA CODIGO DE MONSE -->
 
 				<!-- EMPIEZA CODIGO DE GOCCHI -->
+				&nbsp
 				<section role="tabpanel" class="container tab-pane" id="espacios">
-					<div class="input-group">
+
+					<section class="container">
+						<div class="row">
+						    <div id="mapa" class="col-md-6 col-md-offset-2">
+							    <img class="img-responsive" src="../assets/img/croquis piso 4.png" alt="mapa">
+							</div>
+						</div>
+					</section>
+					<div class="row">
+				        <div class="input-group col-md-5">
 						<span class="input-group-addon">Buscar</span>
 						<input id="filtrar-espacios" type="text" class="form-control">
+						</div>
+                    </div>
+					<div class="row">
+						<div class="col-md-1 radio padding-vw3-radio">
+							<label><input id="rdi-empresa" type="radio" name="radio-empresa">Empresa</label>
+						</div>
+						<div class="col-md-1 radio padding-vw3-radio">
+							<label><input id="rdi-pisos" type="radio" name="radio-piso">Pisos</label>
+						</div>
+						<div class="col-md-1 radio padding-vw3-radio">
+							<label><input id="rdi-precios" type="radio" name="optradio">Precios</label>
+						</div>
 					</div>
 					<table class="table table-hover">
 						<thead>
 							<tr>
 								<th>SKU</th>
 								<th>Empresa</th>
-								<th>Piso</th>
+								<th class="piso">Piso</th>
 								<th>Oficina</th>
-								<th>Precio</th>
+								<th class="precio">Precio</th>
 								<th>Metraje</th>
 								<th>Núm.Personas</th>
 								<th>Estado</th>
@@ -294,73 +320,73 @@
 						</thead>
 						<tbody class="buscar">
 							<tr>
-								<th>0020</th>
-								<th>Laboratoria</th>
+								<th>00401</th>
+								<th class="empresa">Laboratoria</th>
+								<th>4</th>
+								<th>1</th>
+								<th>$26,456</th>
+								<th>34m</th>
+								<th>23</th>
+								<th>Rentado</th>
+							</tr>
+							<tr>
+								<th>00402</th>
+								<th class="empresa">Platzi</th>
+								<th>4</th>
 								<th>2</th>
-								<th>7</th>
+								<th>$30,350</th>
+								<th>200m</th>
+								<th>10</th>
+								<th>Rentado</th>
+							</tr>
+							<tr>
+								<th>00403</th>
+								<th>_ _ _ _</th>
+								<th>4</th>
+								<th>3</th>
+								<th>$15,789</th>
+								<th>45m</th>
+								<th>5</th>
+								<th>Disponible</th>
+							</tr>
+							<tr>
+								<th>00404</th>
+								<th>_ _ _ _</th>
+								<th>4</th>
+								<th>4</th>
+								<th></th>
+								<th>354m</th>
+								<th>50</th>
+								<th>Disponible</th>
+							</tr>
+							<tr>
+								<th>00405</th>
+								<th class="empresa">DadaRoom</th>
+								<th>4</th>
+								<th>5</th>
+								<th>$12,534</th>
+								<th>30m</th>
+								<th>6</th>
+								<th>Rentado</th>
+							</tr>
+							<tr>
+								<th>00406</th>
+								<th>Rappi</th>
+								<th>2</th>
+								<th>2</th>
 								<th>$23,456</th>
 								<th>34m</th>
 								<th>23</th>
 								<th>Rentado</th>
 							</tr>
 							<tr>
-								<th>0020</th>
-								<th>Laboratoria</th>
-								<th>2</th>
+								<th>00407</th>
+								<th>iTexico</th>
+								<th>4</th>
 								<th>7</th>
-								<th>$23,456</th>
-								<th>34m</th>
-								<th>23</th>
-								<th>Rentado</th>
-							</tr>
-							<tr>
-								<th>0020</th>
-								<th>Laboratoria</th>
-								<th>2</th>
-								<th>7</th>
-								<th>$23,456</th>
-								<th>34m</th>
-								<th>23</th>
-								<th>Rentado</th>
-							</tr>
-							<tr>
-								<th>0020</th>
-								<th>Laboratoria</th>
-								<th>2</th>
-								<th>7</th>
-								<th>$23,456</th>
-								<th>34m</th>
-								<th>23</th>
-								<th>Rentado</th>
-							</tr>
-							<tr>
-								<th>0020</th>
-								<th>Laboratoria</th>
-								<th>2</th>
-								<th>7</th>
-								<th>$23,456</th>
-								<th>34m</th>
-								<th>23</th>
-								<th>Rentado</th>
-							</tr>
-							<tr>
-								<th>0020</th>
-								<th>Laboratoria</th>
-								<th>2</th>
-								<th>7</th>
-								<th>$23,456</th>
-								<th>34m</th>
-								<th>23</th>
-								<th>Rentado</th>
-							</tr>
-							<tr>
-								<th>0020</th>
-								<th>Laboratoria</th>
-								<th>2</th>
-								<th>7</th>
-								<th>$23,456</th>
-								<th>34m</th>
-								<th>23</th>
+								<th>$80,456</th>
+								<th>86m</th>
+								<th>20</th>
 								<th>Rentado</th>
 							</tr>
 							<tr>
