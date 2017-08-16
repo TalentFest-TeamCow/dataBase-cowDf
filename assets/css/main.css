@@ -63,3 +63,12 @@ div.navbar-header.row > img {
 }
 
 /* FIN - VIEW 1 */
+
+/*INICIO - SPLASH*/
+.logo{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+/*FIN - SPLASH*/
