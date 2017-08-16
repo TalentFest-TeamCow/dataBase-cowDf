@@ -8,13 +8,12 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
-	<link rel="stylesheet" href="assets/css/main.css">
-	<link rel="stylesheet" href="assets/css/fonts.css">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<link rel="stylesheet" href="../assets/css/fonts.css">
 </head>
 
-
 <body>
-	<nav class="navbar navbar-default fondo-negro navbar-fixed-top">
+	<nav class="navbar navbar-default fondo-negro">
 		<div class="container">
 			<div class="navbar-header row">
 				<img src="assets/img/cow_logo.jpg" alt="logo-cow" class="col-md-1 col-md-offset-11">
@@ -22,7 +21,7 @@
 		</div>
 	</nav>
 
-	<div class="container margin-top-nav">
+	<div class="container">
 			<!-- Nav tabs -->
 			<ul class="nav nav-tabs" role="tablist" id="myTabs">
 				<li role="presentation" class="active"><a href="#empresas" aria-controls="empresas" role="tab" data-toggle="tab">Empresas</a></li>
@@ -132,38 +131,11 @@
 				<!-- Termina seccion empresa **Karla**  -->
 
 				<!-- EMPIEZA CODIGO DE MONSE -->
-				&nbsp
 				<section role="tabpanel" class="tab-pane" id="clientes">
 					<section class="container">
 						<div class="row input-group">
-							<div class="col-md-3">
-								<input type="text" class="form-control " placeholder="Nombre" aria-describedby="basic-addon1">
-							</div>
-							<div class="col-md-3">
-								<input type="text" class="form-control  " placeholder="Empresa" aria-describedby="basic-addon1">
-							</div> &nbsp
-							<div class="col-md-3">
-								<div class="dropdown  ">
-									<button class="btn btn-default dropdown-toggle " type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-									Pisos
-											<span class="caret"></span>
-										</button>
-									<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-										<li><a href="#">1</a></li>
-										<li><a href="#">2</a></li>
-										<li><a href="#">3</a></li>
-										<li><a href="#">4</a></li>
-										<li><a href="#">5</a></li>
-										<li><a href="#">6</a></li>
-										<li><a href="#">7</a></li>
-										<li><a href="#">8</a></li>
-										<li><a href="#">9</a></li>
-										<li><a href="#">10</a></li>
-										<li><a href="#">11</a></li>
-										<li><a href="#">12</a></li>
-									</ul>
-								</div>
-							</div>
+							<span class="input-group-addon">Buscar</span>
+							<input id="filtrar-clientes" type="text" class="form-control">
 						</div>
 					</section>
 					&nbsp
@@ -172,7 +144,7 @@
 							<table class="table table-hover">
 								<thead>
 									<tr>
-										<th>#</th>
+										<th>Número</th>
 										<th>Nombre</th>
 										<th>Apellido</th>
 										<th>Empresa</th>
@@ -181,7 +153,7 @@
 										<th>Agregar</th>
 									</tr>
 								</thead>
-								<tbody>
+								<tbody class="buscar">
 									<tr>
 										<th scope="row">1</th>
 										<td>Gaby</td>
@@ -200,8 +172,8 @@
 									</tr>
 									<tr>
 										<th scope="row">2</th>
-										<td>Gaby </td>
-										<td>Rocha</td>
+										<td>Griss</td>
+										<td>blabla</td>
 										<td>Laboratoria</td>
 										<td>Gaby@laboratoria.la</td>
 										<td>57492054</td>
@@ -260,8 +232,8 @@
 									</tr>
 									<tr>
 										<th scope="row">8</th>
-										<td>Gaby</td>
-										<td>Rocha</td>
+										<td>Sr Prr</td>
+										<td>pr pr</td>
 										<td>Laboratoria</td>
 										<td>Gaby@laboratoria.la</td>
 										<td>57492054</td>
@@ -302,29 +274,11 @@
 				<!-- TERMINA CODIGO DE MONSE -->
 
 				<!-- EMPIEZA CODIGO DE GOCCHI -->
-				&nbsp
 				<section role="tabpanel" class="container tab-pane" id="espacios">
 					<div class="input-group">
 						<span class="input-group-addon">Buscar</span>
 						<input id="filtrar-espacios" type="text" class="form-control">
 					</div>
-					<div class="row">
-						<div class="col-md-1 radio padding-vw3-radio">
-							<label><input id="rdi-empresa" type="radio" name="optradio">Empresa</label>
-						</div>
-						<div class="col-md-1 radio padding-vw3-radio">
-							<label><input id="rdi-pisos" type="radio" name="optradio">Pisos</label>
-						</div>
-						<div class="col-md-1 radio padding-vw3-radio">
-							<label><input id="rdi-precios" type="radio" name="optradio">Precios</label>
-						</div>
-					</div>
-
-					<section class="container">
-						<div class="row">
-							<img class="img-responsive" src="assets/img/croquis piso 4.png" alt="">
-						</div>
-					</section>
 					<table class="table table-hover">
 						<thead>
 							<tr>
@@ -450,7 +404,7 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="assets/js/app.js"></script>
+	<script type="text/javascript" src="../assets/js/app.js"></script>
 </body>
 
 
