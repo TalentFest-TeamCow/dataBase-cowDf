@@ -1,3 +1,4 @@
+
 body{
 	background-color: #000;
 }
@@ -7,3 +8,19 @@ body{
   left:50%;
   transform:translate(-50%,-50%);
 }
+=======
+/* INICIO - VIEW 1 */
+
+.marging-vw-uno-search-bottom{
+    margin-bottom: 4%;
+}
+
+.marging-vw-uno-search-top{
+    margin-top: 2%;
+}
+
+.marging-vw-uno-search-top-img{
+    margin-top: 4.5%;
+}
+
+

@@ -1,3 +1,4 @@
+
 //splash
 var start = function (){
     setTimeout(inicio, 3000)
@@ -8,4 +9,12 @@ var inicio = function (){
 }
 
 
+
+
+$('#myTabs a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
 $(document).ready(start)
+
+
