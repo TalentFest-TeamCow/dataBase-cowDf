@@ -1,3 +1,5 @@
-$('#myCollapsible').on('hidden.bs.collapse', function () {
-    $('.collapse').collapse()
+$('#myTabs a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
 })
+
